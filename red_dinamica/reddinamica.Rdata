@@ -1,0 +1,16 @@
+library('network')
+library('tsna')
+library('ndtv')
+
+red <-network(enlaceestaticos,vertex.attr =enlaces,edge.spells=tabdinam2,directed = FALSE ) 
+plot(red, bg="royalblue", 
+     vertex.border="blue")
+class(red) ##### clase network
+reddinamica <- networkDynamic(red, edge.spells=edspells) ###se debe agregar ala clase networkdynamic (tarda)
+class(reddinamica)
+render.d3movie(
+  reddinamica,
+  vertex.col = "violet",
+  edge.col = "darkgrey",
+  vertex.border = "lightgrey")
+
