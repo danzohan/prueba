@@ -1,1 +1,1 @@
-aqui se muestra una red que relaciona autores de IF 
+aqui se muestra una red dinamica
